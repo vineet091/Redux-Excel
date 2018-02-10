@@ -1,0 +1,227 @@
+/* common classes */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f1f4f9;
+	margin: 0;
+}
+
+.header {
+	position: fixed;
+	background: #fff;
+	max-height: 70px;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #e7e7e7;
+	background: #fff;
+}
+
+.navbar-default {
+	background-color: #fff;
+	border-color: #eeeeee;
+}
+
+.navbar-default  .navbar-brand, .navbar-default  .navbar-brand:hover,
+	.navbar-default  .navbar-brand:focus {
+	color: #333;
+}
+
+ul {
+	list-style: none;
+	float: left;
+	margin: 0 -15px;
+}
+
+ul:before {
+	display: table;
+	content: " ";
+}
+
+ul:after {
+	clear: both;
+}
+
+li {
+	margin: 17px 8px;
+	padding: 6px;
+	text-shadow: none;
+	color: #3f4244;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
+	float: left;
+}
+
+section {
+	padding-top: 70px;
+}
+
+section .container {
+	padding: 10px;
+}
+
+.excel-wrapper {
+	overflow: auto;
+	max-height: 500px;
+}
+
+.excel-box {
+	padding: 0;
+	clear: both;
+	float: left;
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: 25px;
+	margin-top: 0;
+	padding: 0;
+	background-color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-bottom: 1px solid #d1d4d5;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.excel-title {
+	padding: 0 17px;
+	margin-bottom: 0;
+	height: 50px;
+	line-height: 50px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.excel-title h3 {
+	display: inline-block;
+	margin: 0;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: default;
+	color: #4e5e6a;
+}
+
+.excel-content {
+	padding: 15px;
+}
+
+table {
+	width: 100%;
+	clear: both;
+	border-collapse: collapse;
+	font-family: Arial;
+}
+
+td {
+	border: 1px solid #ccc;
+	min-width: 40px;
+	outline: none;
+}
+
+td:first-child {
+		padding: 5px;
+	font-weight: bold;
+}
+td .content-box{
+	outline:none;
+	padding:5px;
+	height: inherit;
+}
+th {
+	border: 1px solid #ccc;
+	border-bottom: 1px solid black;
+	padding: 5px;
+	min-width: 40px;
+	text-align: center;
+	outline: none;
+}
+
+th:first-child {
+	width: 20px;
+}
+
+.row-selected {
+	background-color: #DBECFA;
+}
+
+* 
+
+.resizable {
+	position: relative;
+	border: 2px solid green;
+}
+
+.resizer {
+	width: 4px;
+	height: 4px;
+	background: green;
+	position: absolute;
+	right: -2px;
+	bottom: -2px;
+	cursor: se-resize;
+}
+
+.react-contextmenu {
+	min-width: 120px;
+	padding: 5px 0;
+	margin: 2px 0 0;
+	font-size: 16px;
+	color: #373a3c;
+	text-align: left;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid rgba(0, 0, 0, .15);
+	box-shadow: 0 0px 2px 0 rgba(0, 0, 0, .26), 0 2px 10px 0
+		rgba(0, 0, 0, .16);
+	border-radius: .25rem;
+	outline: none;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.react-contextmenu.react-contextmenu--visible {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.react-contextmenu-item {
+	width: 120px;
+	padding: 3px 12px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #373a3c;
+	text-align: inherit;
+	white-space: nowrap;
+	background: 0 0;
+	border: 0;
+	cursor: pointer;
+}
+
+.react-contextmenu-item  a {
+	color: #419ab1;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.react-contextmenu-item.react-contextmenu-item--active,
+	.react-contextmenu-item:hover {
+	border-color: #0275d8;
+	text-decoration: none;
+	color: #262626 !important;
+	background-color: #F5F5F5 !important;
+}
+
+}
+.react-contextmenu-item.react-contextmenu-submenu {
+	padding: 0;
+}
+.react-contextmenu-wrapper {
+   display:block;	
+   height: 100%;
+    width: 100%;
+}
+
+td.highlighted {
+	background-color: #999;
+}
